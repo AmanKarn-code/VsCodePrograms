@@ -1,3 +1,11 @@
-<template>
-    <h1 style="color: #ffff; font-size: 2rem;">Hello, World</h1>
+<template >
+    <div style="background-color: rgb(50, 56, 59);border-radius:5px">
+        <h1 style="color: #ffff; font-size: 2rem;">Hello, World</h1>
+        <div style="display: flex;align-items: center;gap:5px;flex-direction: row;background-color: black; justify-content:center">  
+            <template for:each={listOfRec} for:item="rec" >
+                <lightning-card key={rec} variant="Narrow"  title={rec} style="padding: 10px;">
+                </lightning-card>
+            </template>
+        </div>
+    </div>
 </template>
